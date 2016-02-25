@@ -26,7 +26,6 @@ var mittens = [];
 
 for(var i = 0 ; i < value.length ; i++){
 	mittens[i] = value.charAt(i);
-
 }
 
 console.log(mittens); // ["2", "9", "1", "1"]
@@ -42,12 +41,12 @@ console.log(mittens); // ["9", "1"]
 
 var boots = "";
 
-for(var j = 1; j > (mittens.length - 3) ; j--){
+for(var j = (mittens.length - 1); j > (mittens.length - (mittens.length + 1)) ; j--){
 	//console.log(boots);
 	boots += mittens[j];
 }
 
-console.log(boots); // "19"
+console.log("Boots = " + boots); // "19"
 
 // 7. parseInt both the 'value' and the new variable created in Step 6, ensure that both 'value' and the new variable are set to these new parsed values;
 
